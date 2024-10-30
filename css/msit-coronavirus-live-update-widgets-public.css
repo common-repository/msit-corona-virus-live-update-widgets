@@ -1,0 +1,134 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.msit_container{
+	max-width: 465px;
+	margin: 10px auto;
+	background-color: #000000;
+	border-radius: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+.msit_titleleft{
+	display: flex;
+	align-items: center;
+	float: left;
+}
+.msit_titleleft img{
+	width: 88px;
+	margin-right: -11px;
+}
+.msit_titleleft h2{
+	font-size: 25px;
+	font-weight: 400;
+	font-family: Arial;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 8px 10px;
+}
+.msit_titleleft h2 span{
+	font-size: 27px;
+	font-weight: 700;
+	display: block;
+	text-transform: capitalize;
+}
+.msit_contentdec{
+	display: flex;
+	padding: 10px;
+	margin: 0;
+}
+.msit_contentdec table{
+	width: 100%;
+	margin: 0;
+}
+.msit_contentdec th{
+  font-weight: 700;
+}
+.msit_contentdec th, td {
+  border: 1px solid #ffffff;
+}
+
+.msit_tfoot, .msit_tfoot td {
+  border-color: #000000;
+  font-size: 14px !important;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.msit_tfoot b{
+	color: #E91E63;
+}
+.msit_contentdec table th,td{
+	color: #ffffff;
+	text-align: center;
+}
+.msit_contentdec th:nth-child(1),td:nth-child(1) {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.msit_contentdec th:nth-child(2),td:nth-child(2) {
+    color: #ffbf00;
+    font-size: 13px;
+    text-align: center;
+}
+.msit_contentdec th:nth-child(3),td:nth-child(3) {
+    color: #dc3545;
+    font-size: 13px;
+    text-align: center;
+}
+.msit_contentdec th:nth-child(4),td:nth-child(4) {
+    color: #f9f9f9;
+    font-size: 13px;
+    text-align: center;
+}
+.msit_single{
+	width: 33%;
+}
+.msit_single p{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: Arial;
+	text-align: center;
+}
+.msit_single p span{
+	color: #e3b410;
+	display: block;
+	font-size: 48px;
+}
+.msit_single.strong p span{
+	color: #25ad00;
+}
+.msit_single.death p span{
+	color: #d51e20;
+}
+.msit_top {
+    /* width: 100%; */
+    overflow: hidden;
+}
+.msit_titleleft h1:not(.site-title):before, h2:before{
+	content: none !important;
+}
+
+@media all and (max-width: 767px){
+	.msit_titleleft,
+	.msit_contentdec{
+		width: 100% !important;
+	}
+	.msit_single p span{
+		font-size: 38px;
+	}
+	.msit_titleleft h2{
+		font-size: 22px;
+	}
+	.msit_titleleft h2 span{
+		font-size: 25px;
+	}
+	.msit_contentdec th:nth-child(1),td:nth-child(1) {
+	    font-weight: 100;
+	    font-size: 14px;
+	}
+}
